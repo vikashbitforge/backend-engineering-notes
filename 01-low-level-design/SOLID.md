@@ -376,6 +376,8 @@ The key idea:
 
 > High-level code should depend on abstractions rather than concrete implementations.
 
+<img width="1165" height="313" alt="image" src="https://github.com/user-attachments/assets/3f63f6ab-97e1-43e3-9d46-e7e3fe513f28" />
+
 Consider:
 
 ```java

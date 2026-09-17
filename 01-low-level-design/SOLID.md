@@ -18,6 +18,24 @@ The overall goal is not to blindly apply five rules. The goal is to reduce unnec
 
 > A class should have only one reason to change.
 
+Marker Entity:
+
+```java
+class Marker{
+    private String name;
+    private String color;
+    private int year;
+    private int price;
+
+    public Marker(String name, String color, int year, int price){
+        this.name = name;
+        this.color = color;
+        this.year = year;
+        this.price = price;
+    }
+}
+```
+
 Consider an `Invoice` class that calculates an invoice, prints it, and saves it to a database.
 
 ```java

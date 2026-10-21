@@ -584,19 +584,19 @@ For example:
 The capital of India is
 ```
 
-↓
+     ↓
 
 ```text
 The capital of India is Delhi
 ```
 
-↓
+     ↓
 
 ```text
 The capital of India is Delhi.
 ```
 
-↓
+     ↓
 
 The process continues.
 
@@ -800,6 +800,8 @@ Repeat
 ```
 This provides a useful mental model for how an autoregressive LLM generates text.
 
+---
+
 # 19. Key Takeaways
 
 ### 1. Tokens are not necessarily words
@@ -856,6 +858,7 @@ The selected token is appended to the sequence, and the model predicts the next 
 
 The entire lecture can be reduced to:
 
+```text
 Text
  ↓
 Tokens
@@ -879,6 +882,7 @@ Next Token
 Append
  ↓
 Repeat
+```
 
 Or in one sentence:
 

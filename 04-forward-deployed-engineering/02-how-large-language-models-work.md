@@ -797,24 +797,24 @@ Selected Token
 Append Token to Context
    ↓
 Repeat
-
+```
 This provides a useful mental model for how an autoregressive LLM generates text.
 
-19. Key Takeaways
+# 19. Key Takeaways
 
-1. Tokens are not necessarily words
+### 1. Tokens are not necessarily words
 
 A token may represent a word, part of a word, punctuation, or another text fragment.
 
-2. Token IDs are identifiers
+### 2. Token IDs are identifiers
 
 A token ID does not itself represent the meaning of a token.
 
-3. Embeddings provide learned numerical representations
+### 3. Embeddings provide learned numerical representations
 
 The model processes vectors rather than raw text.
 
-4. Position matters
+### 4. Position matters
 
 The order of tokens affects meaning.
 
@@ -824,35 +824,35 @@ is different from:
 
 Man bites dog
 
-5. Context changes meaning
+### 5. Context changes meaning
 
 The same token can be interpreted differently depending on surrounding tokens.
 
-6. Attention connects relevant information
+### 6. Attention connects relevant information
 
 Tokens can use information from other tokens in the sequence.
 
-7. Transformers repeatedly refine representations
+### 7. Transformers repeatedly refine representations
 
 Multiple Transformer layers progressively produce richer contextual representations.
 
-8. Logits are scores
+### 8. Logits are scores
 
 The model produces scores for possible next tokens before probabilities are calculated.
 
-9. Softmax produces probabilities
+### 9. Softmax produces probabilities
 
 The logits are converted into a probability distribution.
 
-10. Decoding selects the next token
+### 10. Decoding selects the next token
 
 Greedy decoding, sampling, and temperature affect how a token is selected.
 
-11. Generation is iterative
+### 11. Generation is iterative
 
 The selected token is appended to the sequence, and the model predicts the next token again.
 
-The Mental Model I Want to Remember
+### The Mental Model I Want to Remember
 
 The entire lecture can be reduced to:
 
@@ -882,4 +882,4 @@ Repeat
 
 Or in one sentence:
 
-An LLM takes an existing sequence of tokens, builds context-aware representations through Transformer layers, produces scores for possible next tokens, converts those scores into probabilities, selects a token using a decoding strategy, appends it to the sequence, and repeats the process.
+### An LLM takes an existing sequence of tokens, builds context-aware representations through Transformer layers, produces scores for possible next tokens, converts those scores into probabilities, selects a token using a decoding strategy, appends it to the sequence, and repeats the process.
